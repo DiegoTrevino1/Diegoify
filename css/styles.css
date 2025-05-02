@@ -89,3 +89,42 @@ a {
         font-size: 1.5rem ;
     }
 }
+
+/* Badges */
+.badge {
+    /* using px b/c we don't want it dependent on font size*/
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    /* first parameter is horizontal, second is vertical */
+    padding: 0.5rem 2rem;
+    /* prevents a badge from wrapping into second line. Important
+    when you have limited space.*/
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    /* text color */
+    color: #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
+    }
+}
