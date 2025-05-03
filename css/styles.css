@@ -59,7 +59,6 @@ p {
     h3 {
         font-size: 2.4rem;
     }
-
 }
 
 /* Links */
@@ -71,7 +70,6 @@ a {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
-
 }
 
 .link-arrow::after {
@@ -126,5 +124,39 @@ a {
 
     .badge--small {
         font-size: 1.2rem;
+    }
+}
+
+/* Lists */
+.list {
+    /* get rid of default bullet point and left padding
+    applied from all browers by default */
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+}
+
+.list--inline .list__item {
+    /* use inline-block to set margins */
+    display: inline-block;
+    margin-right: 2rem;
+
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+/* this is nesting, we should avoid it because we can end up with
+overly specific selectors */
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
     }
 }
