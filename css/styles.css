@@ -4,6 +4,8 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body:#918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 /* select all elements. Also all elements that are dynamically inserted
@@ -259,4 +261,51 @@ to inline block */
   .btn {
     font-size: 1.5rem;
   }  
+}
+
+/* Inputs */
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+/* To change the placeholder color settings, use pseudoclass 
+selector! */
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    /* use flex to rearrange the div*/
+    display: flex;
+}
+
+/* Nesting to separate border from input component */
+.input-group .input {
+    border: 0;
+    /* this will make the input field grow to take up
+    all available space */
+    flex-grow: 1;
+    /* vertical horizontal */
+    padding: 1.5rem 1rem;
+}
+
+/* define new rule for buttons inside input groups */
+.input-group .btn {
+    /* use px because we don't want it dependent on viewport size
+    or font size */
+    margin: 4px;
+
+}
+
+/* desktop version */
+@media screen and (min-width: 1024px){
+    .input {
+        font-size: 1.5rem;
+    }
 }
