@@ -1,7 +1,7 @@
 <svg width="0" height="0" class="hidden">
   <symbol id="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
     <defs></defs>
-    <circle cx="25.5" cy="25.5" r="25.5"></circle>
+    <circle cx="25.5" cy="25.5" r="25.5" fill="#393939"></circle>
     <rect
       x="24.4"
       y="27.9"
