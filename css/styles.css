@@ -224,6 +224,13 @@ overly specific selectors */
     white-space: nowrap;
 }
 
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
 /* Define a few skin classes, OOP, seperate structure from skin */
 .btn--primary {
     background: var(--color-primary);
@@ -314,7 +321,7 @@ selector! */
     all available space */
     flex-grow: 1;
     /* vertical horizontal */
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 /* define new rule for buttons inside input groups */
