@@ -225,8 +225,8 @@ overly specific selectors */
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    /* vertical , horizontal */
-    padding: 2rem 3rem;
+    /* vertical , horizontal, 4vh means 4% of the viewport width */
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -330,6 +330,7 @@ selector! */
     flex-grow: 1;
     /* vertical horizontal */
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 /* define new rule for buttons inside input groups */
@@ -797,9 +798,10 @@ selector! */
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 6rem);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 6rem);
     font-size: 2rem;
     font-weight: 600;
     /* used for horizontal alignment */
